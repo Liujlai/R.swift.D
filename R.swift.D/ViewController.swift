@@ -9,11 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+   
+    @IBOutlet weak var img: UIImageView!{
+        didSet{
+             img.image = R.image.img_dingdanzhongxin()
+            img.backgroundColor = UIColor.purple
+         
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        let img = R.image.img_dingdanzhongxin()
-        
+        self.view.backgroundColor = UIColor.color_DLine
+       
         // Do any additional setup after loading the view, typically from a nib.
     }
 

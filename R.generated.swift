@@ -16,8 +16,18 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.color` struct is generated, and contains static references to 0 colors.
+  /// This `R.color` struct is generated, and contains static references to 1 colors.
   struct color {
+    /// Color `Color_P100`.
+    static let color_P100 = Rswift.ColorResource(bundle: R.hostingBundle, name: "Color_P100")
+    
+    /// `UIColor(named: "Color_P100", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func color_P100(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.color_P100, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   
@@ -40,10 +50,73 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 1 images.
+  /// This `R.image` struct is generated, and contains static references to 10 images.
   struct image {
+    /// Image `img_1`.
+    static let img_1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "img_1")
+    /// Image `img_2`.
+    static let img_2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "img_2")
+    /// Image `img_3`.
+    static let img_3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "img_3")
+    /// Image `img_4`.
+    static let img_4 = Rswift.ImageResource(bundle: R.hostingBundle, name: "img_4")
+    /// Image `img_5`.
+    static let img_5 = Rswift.ImageResource(bundle: R.hostingBundle, name: "img_5")
+    /// Image `img_6`.
+    static let img_6 = Rswift.ImageResource(bundle: R.hostingBundle, name: "img_6")
+    /// Image `img_7`.
+    static let img_7 = Rswift.ImageResource(bundle: R.hostingBundle, name: "img_7")
+    /// Image `img_8`.
+    static let img_8 = Rswift.ImageResource(bundle: R.hostingBundle, name: "img_8")
+    /// Image `img_9`.
+    static let img_9 = Rswift.ImageResource(bundle: R.hostingBundle, name: "img_9")
     /// Image `img_dingdanzhongxin`.
     static let img_dingdanzhongxin = Rswift.ImageResource(bundle: R.hostingBundle, name: "img_dingdanzhongxin")
+    
+    /// `UIImage(named: "img_1", bundle: ..., traitCollection: ...)`
+    static func img_1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.img_1, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "img_2", bundle: ..., traitCollection: ...)`
+    static func img_2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.img_2, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "img_3", bundle: ..., traitCollection: ...)`
+    static func img_3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.img_3, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "img_4", bundle: ..., traitCollection: ...)`
+    static func img_4(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.img_4, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "img_5", bundle: ..., traitCollection: ...)`
+    static func img_5(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.img_5, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "img_6", bundle: ..., traitCollection: ...)`
+    static func img_6(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.img_6, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "img_7", bundle: ..., traitCollection: ...)`
+    static func img_7(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.img_7, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "img_8", bundle: ..., traitCollection: ...)`
+    static func img_8(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.img_8, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "img_9", bundle: ..., traitCollection: ...)`
+    static func img_9(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.img_9, compatibleWith: traitCollection)
+    }
     
     /// `UIImage(named: "img_dingdanzhongxin", bundle: ..., traitCollection: ...)`
     static func img_dingdanzhongxin(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
