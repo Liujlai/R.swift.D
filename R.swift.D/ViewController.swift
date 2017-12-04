@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let img = R.image.img_dingdanzhongxin()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
